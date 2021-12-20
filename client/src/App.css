@@ -6,10 +6,12 @@
   font-family: "Open Sans", sans-serif;
   display: grid;
   place-items: center;
+  background-image: url(https://wallpapershome.com/images/pages/pic_h/23703.jpg); background-size: 100%;
 }
 body {
   margin: 0%;
   padding: 0%;
+  
 }
 @import url("https://fonts.googleapis.com/css?family=Open+Sans:300,400,700");
 
@@ -17,11 +19,14 @@ body {
   display: flex;
   flex-direction: column;
   text-align: center;
+  
 }
 
-.joinChatContainer h3 {
+/* body{background-image: url(https://kynguyenlamdep.com/wp-content/uploads/2020/04/hinh-anh-trang-dep.jpg); background-size: 100%;} */
+.joinChatContainer h1 {
   font-size: 2.5rem;
   margin-bottom: 1rem;
+  color :white;
 }
 .joinChatContainer input {
   width: 210px;
@@ -177,7 +182,7 @@ body {
   cursor: pointer;
   flex: 15%;
   height: 100%;
-  background: transparent;
+  background: black;
   outline: none;
   font-size: 25px;
   color: lightgray;
