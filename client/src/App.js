@@ -1,6 +1,6 @@
 import './App.css';
 import io from 'socket.io-client';
-import React, { useEffect, useState } from "react";
+import React, {  useState } from "react";
 import Chat from "./Chat";
 
 const socket = io.connect("http://localhost:3001"); // eslint-disable-next-line
@@ -12,17 +12,21 @@ function App() {
 
   const joinRoom = () => {
     if (username !== "" && room !== "") {
+      
       socket.emit("join_room", room)
       setShowChat(true);
+    }else{
+      alert("Please enter a username")
     }
   }
+  
 
   return (
     <div className="App">
       {!showChat ? (
         <div className="joinChatContainer">
           <h1>Join Chat</h1>
-          <input type="text" placeholder="Huy...." onChange={(event) => { setUsername(event.target.value); }}
+          <input type="text" placeholder="Name....." onChange={(event) => { setUsername(event.target.value); }}
           />
           <input type="text" placeholder="RoomID....."
             onChange={(event) => { setRoom(event.target.value); }}

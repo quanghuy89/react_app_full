@@ -7,6 +7,7 @@
   display: grid;
   place-items: center;
   background-image: url(https://wallpapershome.com/images/pages/pic_h/23703.jpg); background-size: 100%;
+  background-image: non-repeat;
 }
 body {
   margin: 0%;
@@ -22,7 +23,7 @@ body {
   
 }
 
-/* body{background-image: url(https://kynguyenlamdep.com/wp-content/uploads/2020/04/hinh-anh-trang-dep.jpg); background-size: 100%;} */
+
 .joinChatContainer h1 {
   font-size: 2.5rem;
   margin-bottom: 1rem;
