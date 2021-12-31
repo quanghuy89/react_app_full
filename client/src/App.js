@@ -38,10 +38,7 @@ function App() {
 
         </div>
       ) : (
-
-
         <Chat socket={socket} username={username} room={room} />
-
       )}
     </div>
   );
